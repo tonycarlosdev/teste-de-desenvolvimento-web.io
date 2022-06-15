@@ -1,0 +1,15 @@
+
+
+/* .lista-vertical {
+    width:1px;
+    word-wrap: break-word;
+    font-family: monospace; 
+    white-space: pre-wrap;
+    list-style: none;
+} */
+
+.lista-vertical {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}

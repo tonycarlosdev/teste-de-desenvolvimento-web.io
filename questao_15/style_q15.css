@@ -1,0 +1,62 @@
+.container {
+  margin: 0 ;
+  padding: 0;
+}
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 4fr 2fr;
+  grid-template-rows: 120px 700px 120px;
+  grid-template-areas: 
+  "nav nav nav"
+  "sidenav content advert"
+  "sidenav footer footer"
+  ;
+}
+.nav {
+  grid-area: nav;
+  background: #343A40;
+}
+.content {
+  grid-area: content;
+  background: #DEE2E6;
+}
+.sidenav {
+  grid-area: sidenav;
+  background: #495057;
+}
+.advert {
+  grid-area: advert;
+  background: #6C757D;
+}
+.footer {
+  grid-area: footer;
+  background: #343A40;
+}
+.item {
+  border: 1px solid #ddd;
+  text-align: center;
+  font-size: 1.5em;
+}
+
+h1 {
+  text-align: center;
+  font-size: 1.25em;
+  font-weight: normal;
+}
+body {
+  font-family: monospace;
+  color: #333;
+  padding-bottom: 60px;
+  margin: 0px;
+}
+body > div {
+  padding: 40px 0;
+}
+body > div:nth-of-type(even) {
+  background: rgba(0, 0, 0, .03);
+}
+body > div > img {
+  display: block;
+  margin: 0 auto;
+  max-width: 100%;
+}
